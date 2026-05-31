@@ -28,3 +28,24 @@
 body {
   @apply font-body;
 }
+
+.animate-gradient {
+  background: linear-gradient(270deg, #b97d5d, #4c4946, #05242e);
+  clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 600% 600%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
