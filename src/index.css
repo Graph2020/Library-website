@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: "Martian Mono", monospace;
+  --font-body: "Inter", sans-serif;
+}
+
+@utility center-elements {
+  @apply flex items-center justify-center;
+}
+
+@utility center-col {
+  @apply flex flex-col items-center justify-center;
+}
+
+@utility page-container {
+  @apply h-screen w-full p-5;
+}
+
+@utility title-text {
+  @apply font-heading max-w-96 text-3xl font-black sm:max-w-xl sm:text-5xl md:text-6xl;
+}
+
+@utility span-circle {
+  @apply inline-block size-8 rounded-full bg-amber-500;
+}
+
+body {
+  @apply font-body;
+}
