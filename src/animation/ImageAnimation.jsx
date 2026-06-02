@@ -12,7 +12,7 @@ function ImageAnimation({ children, scrollEnabled = false }) {
       scrollTrigger: !scrollEnabled
         ? null
         : {
-            trigger: children,
+            trigger: imageRef.current,
             start: "top 80%",
           },
     });

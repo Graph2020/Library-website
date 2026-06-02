@@ -22,7 +22,10 @@ function LinesAnimation({ children, scrollEnabled = false }) {
             start: "top 80%",
           },
     });
-  });
+    return () => {
+      splitLine.revert();
+    };
+  }, []);
   return <div ref={linesRef}>{children}</div>;
 }
 
